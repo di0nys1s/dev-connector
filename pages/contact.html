@@ -1,0 +1,46 @@
+<html>
+  <head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>Contact Us</h1>
+
+    <form method="POST" action="/pages/contact">
+      <p>
+        <label for="first_name">Name:</label>
+        <input type="text" name="first_name" />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="text" name="email" />
+      </p>
+      <p>
+        <label for="favourite_number">Favourite Number:</label>
+        <input type="text" name="favourite_number" />
+      </p>
+      <p>
+        <label for="favourite_colour">Favourite Colour:</label>
+        <input type="text" name="favourite_colour" />
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    <script>
+
+      $(document).ready(function() {
+        //validation here
+        //favourite_colour - can not contain numbers, and is a required field
+        //favourite_number - can only contain numbers and no letters, and is a required field
+        //email - must be at least 10 characters long, and is a required field
+        //first_name - can not contain numbers, is a required field
+      })
+
+    </script>
+
+  </body>
+</html>
